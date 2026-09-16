@@ -7,7 +7,7 @@ This project contains small, readable examples for learning core large-language-
 ## Contents
 
 - `basic_config_connect.ipynb` — **start here**: a quick start for Azure configuration, Chat Completions, Responses, and embeddings.
-- ``
+- `agent_goal_loop_prompt.md` - an example chatbot prompt that creates a coding agent goal/loop prompt to build an AI app.
 - `benchmark_example/` — a small MMLU-like multiple-choice benchmark.
 - `chatbot_example/` — a minimal terminal chatbot using the Responses API.
 - `embedding_example/` — creates NIST AI RMF action embeddings and a UMAP plot.
