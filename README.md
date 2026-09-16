@@ -6,13 +6,14 @@ This project contains small, readable examples for learning core large-language-
 
 ## Contents
 
+- `basic_config_connect.ipynb` — **start here**: a quick start for Azure configuration, Chat Completions, Responses, and embeddings.
+- ``
 - `benchmark_example/` — a small MMLU-like multiple-choice benchmark.
 - `chatbot_example/` — a minimal terminal chatbot using the Responses API.
 - `embedding_example/` — creates NIST AI RMF action embeddings and a UMAP plot.
 - `rag_example/` — search → retrieve → augment → generate → cite over those actions.
 - `llm_as_judge_example/` — generates answers and scores them with a rubric.
 - `text2sql_example/` — turns plain-English questions into safe, inspectable SQLite queries.
-- `basic_config_connect.ipynb` — a root-level quick start for Azure configuration, Chat Completions, Responses, and embeddings.
 - `data/` — source data and the embedding CSV produced for the RAG example.
 
 ## Setup in VS Code
