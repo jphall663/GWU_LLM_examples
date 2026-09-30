@@ -12,7 +12,7 @@ This project contains small, readable examples for learning core large-language-
 - `chatbot_example/` — a minimal terminal chatbot using the Responses API.
 - `embedding_example/` — creates NIST AI RMF action embeddings and a UMAP plot.
 - `rag_example/` — search → retrieve → augment → generate → cite over those actions.
-- `llm_as_judge_example/` — generates answers and scores them with a rubric.
+- `llm_as_judge_example/` — generates answers, applies an anchored seven-dimension rubric, displays each intermediate judgment, and summarizes the scores in a dataframe.
 - `text2sql_example/` — turns plain-English questions into safe, inspectable SQLite queries.
 - `data/` — source data and the embedding CSV produced for the RAG example.
 
@@ -55,6 +55,6 @@ The Azure calls require access to the stated deployment names. The non-API porti
 
 ## Running order and troubleshooting
 
-Run the embedding notebook before the RAG notebook. It creates `data/rmf_action_embeddings.csv`, which RAG uses for retrieval. The generated dataset contains the four NIST AI RMF functions: GOVERN, MAP, MEASURE, and MANAGE.
+Run the embedding notebook before the RAG notebook. It creates `data/rmf_action_embeddings.csv`, which RAG uses for retrieval. 
 
 The GPT-5 examples reserve output tokens for both internal reasoning and visible text. If a notebook reports that no visible text or SQL was returned, wait briefly and run that question again; shared educational resources can be rate-limited. Do not lower the example token limits or place an API key in a notebook to work around the issue.
